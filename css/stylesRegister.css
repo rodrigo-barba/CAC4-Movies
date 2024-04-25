@@ -1,0 +1,107 @@
+@import 'styles.css';
+
+.bodyRegister {
+    background-image: linear-gradient(to right top, var(--secondary-500), var(--secondary-500)), url(../images/bg-register.jpg);
+    background-position: center;
+    background-size: cover; /* cubre toda el area */
+    height: 100vh;    
+}
+
+.headerRegister {
+    color: var(--light-font-solid);
+    height: 10vh;
+    padding: var(--spacing-24);
+}
+
+.seccionRegistrarse {
+    width: 30%;
+    background-color: var(--dark-grey);
+    color: var(--light-font-solid);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: var(--spacing-32) var(--spacing-16);
+    height: 88vh; /* el otro 10% del viewport lo tiene el header */
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formRegistrarse {
+    width: 100%;
+    padding: var(--spacing-40);
+}
+
+
+input[type="text"],input[type="email"],input[type="password"],input[type="date"], select {
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    border-radius: 20px;
+    background-color: var(--input-solid);
+    color: var(--light-font-solid); 
+    border: 2px solid var(--primary-solid);
+    width: 100%;
+    height: 40px;
+    outline: none; /* elimina efecto sombra */
+    padding: 0px var(--spacing-20);
+    margin-bottom: var(--spacing-20);
+}
+
+.agreement {
+    font-size: var(--font-xsmall);
+    margin-bottom: var(--spacing-20);
+}
+
+.agreementLabel {
+    margin-left: var(--spacing-8);
+}
+
+.buttonRegister {
+    border: 0px;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16);
+    border-radius: 5px;
+    width: 100%;
+    font-size: var(--font-medium);
+}
+
+.helper {
+    font-size: var(--font-small);
+    color: var(--font-dark-grey);
+    text-decoration: none;
+}
+
+/* **************** @media hasta 768px ***************************************** */
+@media (max-width: 768px) {
+    .headerRegister {
+        padding: var(--spacing-20);
+    }
+    .seccionRegistrarse {
+        width: 95%;
+        /* padding: 10px 10px;
+     */
+    }
+    h2.tituloSection {
+        font-size: var(--font-large);
+    } 
+    .formRegistrarse {
+        text-align: center;
+        width: 80%;
+    }
+    input[type="text"],input[type="email"],input[type="password"],input[type="date"], select {
+        height: 35px;
+        font-size: var(--font-small);
+    }
+    .buttonRegister {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: var(--font-xsmall);
+    }
+    .helper {
+        text-align: left;
+        font-size: var(--font-small);
+    }
+}
+
