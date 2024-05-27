@@ -35,7 +35,7 @@
 }
 
 
-input[type="email"],input[type="password"] {
+input[type="text"],[type="email"],input[type="password"] {
     font-family: var(--base-font);
     font-size: var(--font-medium);
     border-radius: 20px;
@@ -46,7 +46,8 @@ input[type="email"],input[type="password"] {
     height: 40px;
     outline: none; /* elimina efecto sombra */
     padding: 0px var(--spacing-20);
-    margin-bottom: var(--spacing-20);
+    margin-top: var(--spacing-12);
+    margin-bottom: var(--spacing-12);
 }
 
 .buttonLogin {
@@ -63,6 +64,17 @@ input[type="email"],input[type="password"] {
     font-size: var(--font-small);
     color: var(--font-dark-grey);
     text-decoration: none;
+}
+
+.error input:not(.check,.boton) { /* agrega al input un borde rojo (campo con dato erroneo) */
+    border: 1px solid var(--error-solid);
+}
+
+.errorDiv {
+    color: var(--error-solid);
+    font-size: var(--font-xsmall);
+    margin-top: 0px;
+    margin-bottom: var(--spacing-8);
 }
 
 /* **************** @media hasta 768px ***************************************** */

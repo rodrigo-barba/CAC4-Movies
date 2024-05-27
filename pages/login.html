@@ -20,13 +20,15 @@
 
     <main>
         <section class="seccionLogin animate__animated animate__zoomIn">
-            <form class="formLogin">
+            <form class="formLogin" method="get">
               <h2 class="tituloSection">Iniciar Sesión</h2>
               <div>
-                <input type="email" placeholder="Email" id="email" name="email">
+                <input type="text" placeholder="Email" id="email" name="email">
+                <div class="errorDiv"></div>
               </div>
               <div>
                 <input type="password" placeholder="Contraseña" id="password" name="password">
+                <div class="errorDiv"></div>
               </div>
               <div>
                 <input class="buttonLogin" type="submit" value="Iniciar Sesión">
@@ -37,6 +39,6 @@
             </form>
         </section>
     </main>
-
+    <script src="../scripts/scriptLogin.js"></script>
 </body>
 </html>
