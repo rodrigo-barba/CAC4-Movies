@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC4 Movies</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="barraNavegacion">
+            <a class="imagotipo" href="./index.html">
+                <i class="fas fa-film"></i>
+                <span>CAC4-Movies</span>
+            </a>
+            <ul class="listaNavegacion">
+                <li class="itemNavegacion"><a class="enlaceNavegacion" href="#seccionTendencias">Tendencias</a></li>
+                <li class="itemNavegacion"><a class="enlaceNavegacion" href="./pages/register.html">Registrarse</a></li>
+                <li class="itemNavegacion"><a class="enlaceNavegacion login" href="./pages/login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="main">
+        <section class="seccionPrincipal animate__animated animate__zoomIn">
+            <h1 class="tituloPrincipal">Películas y series ilimitadas <br> en un solo lugar</h1>
+            <h2 class="subtituloPrincipal">Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
+            <a class="botonRegistrarse" href="./pages/register.html">Registrate</a>
+        </section>
+        <section class="seccionBuscadorPrincipal">
+            <h2 class="tituloSection">¿Qué estas buscando para ver?</h2>
+            <form class="formBuscadorPeliculas">
+                <input class="inputBuscadorPeliculas" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="botonSubmitBuscadorPeliculas" type="submit" value="Buscar">
+            </form>
+        </section>
+        <hr>
+        <section id="seccionTendencias" class="seccionTendencias">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="divPeliculas" id="contenedorTendencias" data-page="1">
+            <!-- aqui se cargarán las tarjetas de peliculas que son tendencia -->
+            </div>
+            <button class="botonPrevNext anterior">Anterior</button>
+            <button class="botonPrevNext siguiente">Siguiente</button>
+        </section>
+        <hr>
+        <section class="seccionAclamadas">
+            <h3 class="tituloSection">Las más aclamadas</h3>
+            <div class="aclamadasContainer">
+                <!-- aqui se formará el carrusel de las peliculas aclamadas -->
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNavegacion">
+                <li class="itemNavegacion"><a class="enlaceNavegacion" href="./indexAPI.html">Términos y condiciones</a></li>
+                <li class="itemNavegacion"><a class="enlaceNavegacion" href="./indexAPI.html">Preguntas frecuentes</a></li>
+                <li class="itemNavegacion"><a class="enlaceNavegacion" href="./indexAPI.html">Ayuda</a></li>
+                <li class="itemNavegacion"><a class="enlaceNavegacion administrador" href="./indexAPI.html">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="./indexAPI.html#main" class="subir">
+            <img src="./images/flecha-hacia-arriba.png" alt="Subir">
+        </a>
+    </footer>
+    <script src="../scripts/scriptGetPeliculas.js"></script>
+</body>
+</html>
